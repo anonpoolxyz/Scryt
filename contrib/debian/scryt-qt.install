@@ -1,0 +1,6 @@
+usr/local/bin/scryt-qt usr/bin
+share/pixmaps/scryt32.xpm usr/share/pixmaps
+share/pixmaps/scryt16.xpm usr/share/pixmaps
+share/pixmaps/scryt128.png usr/share/pixmaps
+debian/scryt-qt.desktop usr/share/applications
+debian/scryt-qt.protocol usr/share/kde4/services/

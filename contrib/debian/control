@@ -1,0 +1,68 @@
+Source: scryt
+Section: utils
+Priority: optional
+Maintainer: Holger Schinzel <holger@scryt.org>
+Uploaders: Holger Schinzel <holger@scryt.org>
+Build-Depends: debhelper,
+ devscripts,
+ automake,
+ libtool,
+ bash-completion,
+ libdb4.8++-dev,
+ libssl-dev,
+ pkg-config,
+ libevent-dev,
+ libboost-system1.48-dev | libboost-system-dev (>> 1.35),
+ libboost-filesystem1.48-dev | libboost-filesystem-dev (>> 1.35),
+ libboost-program-options1.48-dev | libboost-program-options-dev (>> 1.35),
+ libboost-thread1.48-dev | libboost-thread-dev (>> 1.35),
+ libboost-test1.48-dev | libboost-test-dev (>> 1.35),
+ libboost-chrono1.48-dev | libboost-chrono-dev (>> 1.35),
+ qt4-qmake,
+ libqt4-dev,
+ libqrencode-dev,
+ libprotobuf-dev, protobuf-compiler,
+ python
+Standards-Version: 3.9.2
+Homepage: https://www.scryt.org/
+Vcs-Git: git://github.com/scryt/scryt.git
+Vcs-Browser: https://github.com/scryt/scryt
+
+Package: scrytd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ Scryt is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Scryt uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Scryt Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides the daemon, scrytd, and the CLI tool
+ scryt-cli to interact with the daemon.
+
+Package: scryt-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ Scryt is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Scryt uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Scryt Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides Scryt-Qt, a GUI for Scryt based on Qt.
+
+Package: scryt-tx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer digital currency - standalone transaction tool
+ Scryt is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Scryt uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Scryt Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides scryt-tx, a command-line transaction creation
+ tool which can be used without a scryt daemon.  Some means of
+ exchanging minimal transaction data with peers is still required.

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Scryt
+Comment=Scryt P2P Cryptocurrency
+Comment[fr]=Scryt, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Scryt, eşten eşe kriptografik sanal para birimi
+Exec=scryt-qt %u
+Terminal=false
+Type=Application
+Icon=scryt128
+MimeType=x-scheme-handler/scryt;
+Categories=Office;Finance;

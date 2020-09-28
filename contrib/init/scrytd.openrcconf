@@ -1,0 +1,33 @@
+# /etc/conf.d/scrytd: config file for /etc/init.d/scrytd
+
+# Config file location
+#SCRYTD_CONFIGFILE="/etc/scrytcore/scryt.conf"
+
+# What directory to write pidfile to?  (created and owned by $SCRYTD_USER)
+#SCRYTD_PIDDIR="/var/run/scrytd"
+
+# What filename to give the pidfile
+#SCRYTD_PIDFILE="${SCRYTD_PIDDIR}/scrytd.pid"
+
+# Where to write scrytd data (be mindful that the blockchain is large)
+#SCRYTD_DATADIR="/var/lib/scrytd"
+
+# User and group to own scrytd process
+#SCRYTD_USER="scrytcore"
+#SCRYTD_GROUP="scrytcore"
+
+# Path to scrytd executable
+#SCRYTD_BIN="/usr/bin/scrytd"
+
+# Nice value to run scrytd under
+#SCRYTD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+SCRYTD_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for scrytd to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+SCRYTD_SIGTERM_TIMEOUT=60

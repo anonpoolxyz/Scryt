@@ -1,0 +1,11 @@
+[Protocol]
+exec=scryt-qt '%u'
+protocol=scryt
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false
