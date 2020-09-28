@@ -53,7 +53,7 @@ Coin Specs
 <tr><td>Max Coin Supply</td><td>50,000,000 SCY</td></tr>
 <tr><td>Premine</td><td>75,000 SCY</td></tr>
 <tr><td>Masternodes</td><td>60 %</td></tr>
-<tr><td>Miners</td><td>50 %</td></tr>
+<tr><td>Miners</td><td>40 %</td></tr>
 <tr><td>P2P port</td><td>8998</td></tr>
 <tr><td>RPC port</td><td>8997</td></tr>
 <tr><td>POW Confirmations</td><td>100</td></tr>
