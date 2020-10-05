@@ -99,7 +99,7 @@ UniValue getnetworkhashps(const JSONRPCRequest& request)
        );
 
     LOCK(cs_main);
-    return GetNetworkHashPS(request.params.size() > 0 ? request.params[0].get_int() : 360, request.params.size() > 1 ? request.params[1].get_int() : -1);
+    return GetNetworkHashPS(request.params.size() > 0 ? request.params[0].get_int() : 10, request.params.size() > 1 ? request.params[1].get_int() : -1);
 }
 
 UniValue generateBlocks(std::shared_ptr<CReserveScript> coinbaseScript, int nGenerate, uint64_t nMaxTries, bool keepScript)
